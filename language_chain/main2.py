@@ -1,11 +1,12 @@
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
+
 import streamlit as st
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 
 chat_model = ChatOpenAI()
 
-st.title('인공지능 시인')  # 원하는 제목 입력
+st.title('달무티 화이팅')  # 원하는 제목 입력
 
 content = st.text_input('시를 작성할 주제를 작성해주세요!')
 
